@@ -8,13 +8,13 @@ footer { position: fixed; bottom: 0px; }
 /* 공통 스타일 */
 h1 { padding: 15px; font-size: 30px ; color: white; }
 h2 { font-size: 15px; color: white; }
-h3 { margin: 10px; font-size: 15px; color: black; text-shadow: 4px 4px 7px green; }
+h3 { margin: 10px; font-size: 15px; color: black; text-shadow: 4px 4px 7px black; }
 h1, h2 { background-image: url(bg.jpg); background-repeat: repeat-x; }
 
 img { border: 0; padding: 2px; }
 
 nav { margin: 5px 5px; }
-nav > span > a { font-style: bold; margin: 0 ; padding: 3px; border: 2px solid purple; float: right; text-decoration: none; background: purple; color: white; }
+nav > span > a { font-style: bold; margin: 0 ; padding: 3px; border: 2px solid black; float: right; text-decoration: none; background: black; color: white; }
 nav > span > a:hover { background: #ff00ff; color: white; }
 @media only screen and (min-width: 321px) and (orientation: landscape) {
 	section { width: 80%; float: left; }
@@ -29,7 +29,7 @@ nav > span > a:hover { background: #ff00ff; color: white; }
 
 /* minfo.html 적용 스타일 */
 #year-table { table-layout: auto; width: 80%; border-collapse: seperate; }
-#year-table thead { background: #E4F2D0; }
+#year-table thead { background: yellow; }
 #logo { position: fixed; top:130px; left: 70px; opacity: 0.3; }
 
 /* mstudy.html 적용 스타일 */
