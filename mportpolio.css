@@ -13,8 +13,8 @@ h1, h2 { background-image: url(bg.jpg); background-repeat: repeat-x; }
 
 img { border: 0; padding: 2px; }
 
-nav { margin: 5px 5px; }
-nav > span > a { font-style: bold; margin: 0 ; padding: 3px; border: 2px solid black; float: right; text-decoration: none; background: black; color: white; }
+nav { margin: 10px 10px; }
+nav > span > a { font-style: bold; margin: 0 ; padding: 3px; border: 2px solid black; float: center; text-decoration: none; background: black; color: white; }
 nav > span > a:hover { background: #ff00ff; color: white; }
 @media only screen and (min-width: 321px) and (orientation: landscape) {
 	section { width: 80%; float: left; }
