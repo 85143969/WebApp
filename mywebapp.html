@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>jQuery Mobile</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css"/>
+<link rel="stylesheet" href="mywebapp.css"/>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="page1">
+	<div data-role="header" data-position="fixed">
+		<h1>Park byeongjoo</h1>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page1" class="ui-btn-active ui-state-persist">소개</a></li>
+				<li><a href="#page2">인적</a></li>
+				<li><a href="#page3">학술</a></li>
+				<li><a href="#page4">경력</a></li>
+				<li><a href="#page5">sns</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="content">
+		<h1>자기소개</h1>
+		<img id="stu-pic" src="stu.jpg" width=200px height="300"/>
+		<p>
+			저는 한국교통대학교 정보통신공학과를 졸업하고
+			kh정보교육원 교육과정을 수료중인 박병주입니다.
+			평소 프로그래밍을 즐겨하였고 특히, 웹 기술 관련하여 XML과 jQuery, jQuery Mobile,  PhoneGap 등에 관심이 많고 다수 개발 경험이 있습니다. 모바일 게임 관련 업체에서 인턴쉽을 수행했으며 데이터베이스 모델링과 튜닝에도 깊은 관심을 가지고 연구하였으며 데이터베이스진흥원에서 주관하는 데이터베이스 관련 공인 자격증도 취득하였습니다. 항상 어떤 환경에서도 최선을 다하고 즐기는 마음으로 열심히 일하고자 합니다.
+		</p>
+		<aside>
+			<h3>참조링크</h3>
+			<a href="http://www.naver.com">
+				<img class="portal" src="naver.jpg" width=50px height="50" alt="네이버이동"/>
+			</a>
+			<a href="http://www.google.com">
+				<img class="portal" src="google.jpg" alt="구글이동"/>
+			</a>
+			<a href="http://www.daum.net">
+				<img class="portal" src="daum.jpg" alt="다음이동"/>
+			</a>
+		</aside>
+		<footer>
+			<h2>Copyright &copy; 2019 Park, byeongjoo </h2>
+		</footer>
+	</div>
+	<div data-role="footer" data-position="fixed" data-id="footerid1">
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#" data-icon="plus">추가</a></li>
+				<li><a href="#" data-icon="minus">삭제</a></li>
+				<li><a href="#" data-icon="check" class="ui-btn-active ui-state-persist">확인</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header" data-position="fixed">
+		<h1>Park byeongjoo</h1>
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#page1" data-direction="reverse">소개</a></li>
+				<li><a href="#page2" class="ui-btn-active ui-state-persist">인적</a></li>
+				<li><a href="#page3">학술</a></li>
+				<li><a href="#page4">경력</a></li>
+				<li><a href="#page5">sns</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="content">
+		<h1>인적사항</h1>
+		<ul>
+			<li>성    명 : 박병주</li>
+			<li>생년월일 : 1996. 05. 22</li>
+			<li>주    소 : 충청북도 청주시 서원구 장전로 51</li>
+			<li>연 락 처 : 010-123-4567</li>
+			<li>학    력
+		<table id="year-table" border="1">
+			<thead>
+				<tr>	<th>졸업년도</th> <th>출신학교</th></tr>
+			</thead>
+			<tbody>
+				<tr>	<td>2009. 2</td><td> 진흥초등학교 졸업</td>	</tr>
+				<tr>	<td>2012. 2.</td><td> 사대부중학교 졸업</td>	</tr>
+				<tr>	<td>2015. 2.</td><td> 청주고등학교 졸업</td></tr>
+				<tr>	<td>2019. 2.</td><td> 한국교통대학교 정보통신공학과 졸업</td></tr>
+			</tbody>
+		</table>
+	</li>
+	</ul>
+	<img id="logo" src="logo.jpg"/>
+	<aside>
+		<h3>참조링크</h3>
+		<a href="http://www.naver.com">
+			<img class="portal" src="naver.jpg" width=50px height="50" alt="네이버이동"/>
+		</a>
+		<a href="http://www.google.com">
+			<img class="portal" src="google.jpg" alt="구글이동"/>
+		</a>
+		<a href="http://www.daum.net">
+			<img class="portal" src="daum.jpg" alt="다음이동"/>
+		</a>
+	</aside>
+	<footer>
+		<h2>Copyright &copy; 2019 Park, byeongjoo </h2>
+	</footer>
+
+	</div>
+	<div data-role="footer" data-position="fixed" data-id="footerid1">
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#" data-icon="plus">추가</a></li>
+				<li><a href="#" data-icon="minus">삭제</a></li>
+				<li><a  data-icon="check" class="ui-btn-active ui-state-persist">확인</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header" data-position="fixed">
+		<h1>Park byeongjoo</h1>
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#page1" data-direction="reverse">소개</a></li>
+				<li><a href="#page2" data-direction="reverse">인적</a></li>
+				<li><a href="#page3" class="ui-btn-active ui-state-persist">학술</a></li>
+				<li><a href="#page4">경력</a></li>
+				<li><a href="#page5">sns</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="content">
+		<h1>프로젝트</h1>
+		<ul>
+			<h3><li>M4 실습</li></h3>
+		</ul>
+		<video controls preload="metadata" width=200px height="300">
+			<source src="video.ogv" type="video/ogv"></source>
+			<source src="video.mp4" type="video/mp4"></source>
+			<source src="video.webm" type="video/webm"></source>
+			브라우저에서 비디오 파일을 지원하지 않습니다. <br/>
+		</video>
+		<h3>자격증</h3>
+		<ul>
+			<li>MOS파워포인트</li>
+			<li>토익 550 ㅋㄷㅋㄷ</li>
+		</ul>
+		<h3>수상</h3>
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+	<img id="logo" src="logo.jpg"/>
+	<aside>
+		<h3>참조링크</h3>
+		<a href="http://www.naver.com">
+			<img class="portal" src="naver.jpg" width=50px height="50" alt="네이버이동"/>
+		</a>
+		<a href="http://www.google.com">
+			<img class="portal" src="google.jpg" alt="구글이동"/>
+		</a>
+		<a href="http://www.daum.net">
+			<img class="portal" src="daum.jpg" alt="다음이동"/>
+		</a>
+	</aside>
+	<footer>
+		<h2>Copyright &copy; 2019 Park, byeongjoo </h2>
+	</footer>
+
+	</div>
+	<div data-role="footer" data-position="fixed" data-id="footerid1">
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#" data-icon="plus">추가</a></li>
+				<li><a href="#" data-icon="minus">삭제</a></li>
+				<li><a  data-icon="check" class="ui-btn-active ui-state-persist">확인</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header" data-position="fixed">
+		<h1>Park byeongjoo</h1>
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#page1" data-direction="reverse">소개</a></li>
+				<li><a href="#page2" data-direction="reverse">인적</a></li>
+				<li><a href="#page3" data-direction="reverse">학술</a></li>
+				<li><a href="#page4" class="ui-btn-active ui-state-persist">경력</a></li>
+				<li><a href="#page5">sns</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="content">
+		<h1>세미나연수</h1>
+		<h3>세미나(연수)</h3>
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+		<!-- <div id="pic-container">
+			<img id="pic1" class="semi-pic" src="seminar1.jpg"/>
+			<img id="pic2" class="semi-pic" src="seminar2.jpg"/>
+			<img id="pic3" class="semi-pic" src="seminar3.jpg"/>
+		</div> -->
+		<h3>인턴쉽</h3>
+		<ul>
+			<li></li>
+		</ul>
+		<h3>봉사</h3>
+		<ul>
+			<li></li>
+			<li></li>
+		</ul>
+	<img id="logo" src="logo.jpg"/>
+	<aside>
+		<h3>참조링크</h3>
+		<a href="http://www.naver.com">
+			<img class="portal" src="naver.jpg" width=50px height="50" alt="네이버이동"/>
+		</a>
+		<a href="http://www.google.com">
+			<img class="portal" src="google.jpg" alt="구글이동"/>
+		</a>
+		<a href="http://www.daum.net">
+			<img class="portal" src="daum.jpg" alt="다음이동"/>
+		</a>
+	</aside>
+	<footer>
+		<h2>Copyright &copy; 2019 Park, byeongjoo </h2>
+	</footer>
+
+	</div>
+	<div data-role="footer" data-position="fixed" data-id="footerid1">
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#" data-icon="plus">추가</a></li>
+				<li><a href="#" data-icon="minus">삭제</a></li>
+				<li><a  data-icon="check" class="ui-btn-active ui-state-persist">확인</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div data-role="page" id="page5">
+	<div data-role="header" data-position="fixed">
+		<h1>Park byeongjoo</h1>
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#page1" data-direction="reverse">소개</a></li>
+				<li><a href="#page2" data-direction="reverse">인적</a></li>
+				<li><a href="#page3" data-direction="reverse">학술</a></li>
+				<li><a href="#page4" data-direction="reverse">경력</a></li>
+				<li><a href="#page5" class="ui-btn-active ui-state-persist">sns</a></li>
+			</ul>
+		</div>
+	</div>
+	<div data-role="content">
+		<h1>sns링크</h1>
+			<a href="https://www.facebook.com/profile.php?id=100005318104201">
+			 <img class="portal" src="facebook.jpg" width=70px height="70" alt="페이스북이동"/></a>
+		   <a href="https://www.instagram.com/byeong_jour/">
+			<img class="portal" src="instagram.jpg" width=70px height="70" alt="인스타그램이동"/></a>
+	<aside>
+		<h3>참조링크</h3>
+		<a href="http://www.naver.com">
+			<img class="portal" src="naver.jpg" width=50px height="50" alt="네이버이동"/>
+		</a>
+		<a href="http://www.google.com">
+			<img class="portal" src="google.jpg" alt="구글이동"/>
+		</a>
+		<a href="http://www.daum.net">
+			<img class="portal" src="daum.jpg" alt="다음이동"/>
+		</a>
+	</aside>
+	<footer>
+		<h2>Copyright &copy; 2019 Park, byeongjoo </h2>
+	</footer>
+
+	</div>
+	<div data-role="footer" data-position="fixed" data-id="footerid1">
+		<div data-role="navbar" >
+			<ul>
+				<li><a href="#" data-icon="plus">추가</a></li>
+				<li><a href="#" data-icon="minus">삭제</a></li>
+				<li><a  data-icon="check" class="ui-btn-active ui-state-persist">확인</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
