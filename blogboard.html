@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>MY Blog by HTML</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <!-- 제이쿼리 모바일, 제이쿼리 라이브러리 파일 -->
+        	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!-- 사용자 정의 자바스크립트 파일 -->
+        <script src="blog.js"></script>
+        <script>
+        	$(document).ready( function() {
+        		// DB 연결
+        		openDB();
+        		createTable();
+        		// 이벤트 함수 정의
+        	 	$('#submit1').click( function() {
+        	 		insertBook();
+        		});
+        		$('#cancel1').click( function() {
+        			$('#bookType1').val('미정').attr('selected', 'selected');
+        			$('#bookType1').selectmenu('refresh');
+        		});
+        		$('#search2').click( function() {
+        		  var name = $('#sBookName2').val();
+        		  selectBook2(name);
+        		});
+        		$('#submit2').click( function() {
+        		  updateBook();
+        		});
+        		$('#cancel2').click( function() {
+        			$('#bookType2').val('미정').attr('selected', 'selected');
+        			$('#bookType2').selectmenu('refresh');
+        		});
+        		$('#search3').click( function() {
+        		  var name = $('#sBookName3').val();
+        		  selectBook3(name);
+        		});
+        		$('#submit3').click( function() {
+        		  deleteBook();
+        		});
+        		$('#search4').click( function() {
+        		  var name = $('#sBookName4').val();
+        		  selectBook4(name);
+        		});
+
+        		$('#first').click( function() {
+        		  position='first';
+        		  listBook();
+        		});
+        		$('#prev').click( function() {
+        		  position='prev';
+        		  listBook();
+        		});
+        		$('#next').click( function() {
+        		  position='next';
+        		  listBook();
+        		});
+        		$('#last').click( function() {
+        		  position='last';
+        		  	listBook();
+        		});
+        	});
+        </script>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<a href="blog.html" class="logo"><strong>Forty</strong></a>
+						<nav>
+							<a href="#menu">메뉴</a>
+						</nav>
+					</header>
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+                            <li><a href="blog.html">홈</a></li>
+							<li><a href="bloginfo.html">소개</a></li>
+							<li><a href="blogboard.html">게시글작성</a></li>
+                            <li><a href="blogre.html">게시글수정</a></li>
+                            <li><a href="blogdel.html">게시글삭제</a></li>
+							<li><a href="blogsearch.html">게시글검색</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+						</ul>
+					</nav>
+				<!-- Main -->
+                <div data-role="content">
+                    <form name="form1">
+                        <h3>내용 입력</h3>
+                        <div class="ui-body ui-body-a gap">
+                            <label for="bookType1" class="select">장르:</label>
+                            <select name="bookType1" id="bookType1" data-native-menu="false" data-mini="true" data-inline="true">
+                                <option vlaue="미정">미정</option>
+                                <option value="경제">경제</option>
+                                <option value="시사">시사</option>
+                                <option value="문학">문학</option>
+                                <option value="기술">기술</option>
+                            </select>
+                            <label for="BookName1">제목:</label>
+                            <input type="text" name="bookName1" id="bookName1" value="" data-mini="true"/>
+                        </div>
+                        <div class="ui-body">
+                            <fieldset class="ui-grid-a">
+                                <div class="ui-block-a">
+                                <input type="reset" id="cancel1" value="취소"/>
+                                </div>
+                                <div class="ui-block-b">
+                                <input type="button" id="submit1" value="추가"/>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
